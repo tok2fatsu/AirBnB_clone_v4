@@ -31,7 +31,7 @@ def hbnb():
     st_ct = []
 
     for state in states:
-        st_ct.append([state, sorted(state.cities, key=lambda k: k.name)
+        st_ct.append([state, sorted(state.cities, key=lambda k: k.name)])
 
     amenities = list(storage.all("Amenity").values())
     amenities = sorted(amenities, key=lambda k: k.name)
